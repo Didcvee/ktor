@@ -5,7 +5,7 @@ import org.jetbrains.exposed.sql.transactions.transaction
 
 object DatabaseFactory {
     fun init() {
-        val url = System.getenv("DATABASE_URL") ?: "jdbc:postgresql://109.248.162.157:5436/mydatabase"
+        val url = System.getenv("DATABASE_URL") ?: "jdbc:postgresql://localhost:5436/mydatabase"
         val user = System.getenv("DATABASE_USER") ?: "postgres"
         val password = System.getenv("DATABASE_PASSWORD") ?: "123"
 
